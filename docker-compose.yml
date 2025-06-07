@@ -14,9 +14,9 @@ services:
   wordpress:
     image: docker.io/bitnami/wordpress:6
     ports:
-      - '80:8080'
-    expose:
-      - '80'
+      - '8080:80'
+    #expose:
+   #   - '80'
     volumes:
       - 'wordpress_data:/bitnami/wordpress'
     depends_on:
