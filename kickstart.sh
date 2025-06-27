@@ -63,7 +63,7 @@ sudo systemctl status docker
 
 #%post
 curl -sSL https://raw.githubusercontent.com/Gavinthompson23/scripts/refs/heads/main/docker-compose.yml > docker-compose.yml
-docker-compose up -d
+sudo docker-compose up -d
 sudo systemctl enable docker
 sudo systemctl start docker
 #%end
